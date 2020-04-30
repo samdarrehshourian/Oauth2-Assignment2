@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+# Oauth2-Assignment2
+This is a web application that uses Facebook Oauth 2 to log in and to fetch information regarding the user. 
+>>>>>>> c8b76c1b26333b0667848a0375cb75ec61e8d70b
