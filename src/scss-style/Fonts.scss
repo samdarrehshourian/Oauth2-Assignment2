@@ -1,0 +1,23 @@
+@font-face {
+    font-family: CamptonBold; 
+    src: url(Campton-BoldDEMO.ttf); 
+}
+
+@font-face {
+    font-family: CamptonLight; 
+    src: url(Campton-LightDEMO.ttf); 
+}
+
+@mixin font-attributes($size, $bold, $marginLeft, $marginBottom, $marginTop, $color) {
+    @if $bold == 1 {
+        font-family: CamptonBold;
+    }
+    @else if $bold == 0 {
+        font-family: CamptonLight;
+    }
+    font-size: $size; 
+    margin-left: $marginLeft;
+    margin-top: $marginTop;
+    margin-bottom: $marginBottom; 
+    color: $color; 
+}
