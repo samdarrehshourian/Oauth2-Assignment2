@@ -54,6 +54,7 @@ const  Facebook = () => {
         setPicture(response.picture.data.url);
         
         getUserInfo(response.name, response.email); 
+        window.history.pushState("", "", '/callback');
     }
     
     
