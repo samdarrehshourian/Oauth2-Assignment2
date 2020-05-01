@@ -54,7 +54,6 @@ const  Facebook = () => {
         setPicture(response.picture.data.url);
         
         getUserInfo(response.name, response.email); 
-        window.history.pushState("", "", '/callback');
     }
     
     
@@ -68,6 +67,7 @@ const  Facebook = () => {
                 <h5>{timeStamp}</h5>
             </div>
         );
+        window.history.pushState("", "", '/callback');
     }else{
         facebookContent = (
             <div className="information-box">
