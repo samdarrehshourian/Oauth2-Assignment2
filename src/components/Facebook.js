@@ -1,6 +1,6 @@
 /** This component fetches user information and creates the Facebook log in*/
 import React, {useState} from 'react';
-import FBLogIn from 'react-facebook-login';
+import FBLogin from 'react-facebook-login';
 import axios from 'axios';
 import '../scss-style/Facebook.scss'; 
 
@@ -67,7 +67,7 @@ const  Facebook = () => {
     }else{
         facebookContent = (
             <div className="information-box">
-                <FBLogIn
+                <FBLogin
                 appId="237723284010192"
                 autoLoad={true}
                 fields="name,email,picture"
