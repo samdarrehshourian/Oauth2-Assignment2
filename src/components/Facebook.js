@@ -2,15 +2,13 @@
 import React, {useState} from 'react';
 import FBLogIn from 'react-facebook-login';
 import axios from 'axios';
-
-
 import '../scss-style/Facebook.scss'; 
 
 const  Facebook = () => {
 
     let facebookContent; 
 
-    //States 
+    //States given default value
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userID, setUserID] = useState('');
     const [name, setName] = useState('');
@@ -56,7 +54,6 @@ const  Facebook = () => {
         getUserInfo(response.name, response.email); 
     }
     
-    
     if(isLoggedIn){
         facebookContent = (
             <div className="information-box">
@@ -67,7 +64,6 @@ const  Facebook = () => {
                 <h5>{timeStamp}</h5>
             </div>
         );
-        window.history.pushState("", "", '/callback');
     }else{
         facebookContent = (
             <div className="information-box">
